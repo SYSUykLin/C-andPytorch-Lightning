@@ -42,7 +42,26 @@ int main()
     char a = 'A';
     char b = 65;
     std::cout << a << "," << b << std::endl;
-    std::cout << sizeof a;
+    std::cout << sizeof a << std::endl;
+
+    std::cout << "Condition" << std::endl;
+
+    int x = 5;
+    bool comparisonResult = x == 5;
+    if (comparisonResult)
+    {
+        std::cout << "true" << std::endl;
+    }
+
+    const char * s = "Neural Radiance Field";
+    char arr[] = "Neural Radiance Field";
+    std::cout << s << std::endl;
+    std::cout << arr << std::endl;
+
+    char * p = arr;
+    std::cout << static_cast<void *>(p) << static_cast<void *>(&arr[0]) << std::endl;
+    
+
 
     // get函数是等待我们输入，也是一个暂停函数 
     std::cin.get();
